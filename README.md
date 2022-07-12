@@ -1,2 +1,3 @@
-# 6-Modal
- Jonas Schemdtmann Javascript Course
+# Modal
+
+Jonas Schemdtmann Javascript Course
