@@ -6,6 +6,7 @@ const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
 const btnOpenModal = document.querySelectorAll('.show-modal');
 
+//Working with classes
 //Opening the modal
 const openModal = function () {
   modal.classList.remove('hidden');
@@ -27,3 +28,9 @@ btnCloseModal.addEventListener('click', closeModal);
 
 //Event listener for closing the modal when clicking outside of it
 overlay.addEventListener('click', closeModal);
+
+//Event listener for closing the modal when pressing the Escape key
+document.addEventListener('keydown', function (e) {
+  console.log(e.key);
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+});
